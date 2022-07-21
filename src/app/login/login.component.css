@@ -1,0 +1,87 @@
+.rubik-font{
+    font-family: 'Rubik';
+}
+
+.poppins-font{
+    font-family: 'Poppins';
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-container{
+    background: url('../images/login-image.svg');
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.inputs{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 81px;
+    padding-right: 107px;
+}
+
+input[type=text]{
+    width: 100%;
+    border:1px solid #FBDDBB;
+    margin-bottom: 48px;
+    font-size: 14px;
+    padding: 19px 25px;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 2px solid #FBDDBB;
+  }
+
+button{
+    background-color: #00302E;
+    color: #FBDDBB;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    padding: 19.5px 200px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.signup{
+    width: 100%;
+    margin-top: 34px;
+}
+
+.signup a{
+    text-decoration: none;
+    color: rgba(0, 48, 46, 0.91);
+    font-size: 14px;
+}
