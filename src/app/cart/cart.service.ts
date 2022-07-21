@@ -10,6 +10,7 @@ export  class CartService{
     addToCart(cart:Cart){
         this.cart.push(cart);
         this.cartSizeChanged.emit(this.cart.length);
+        console.log(this.cart)
     }
 
     getCart(){

@@ -1,0 +1,24 @@
+<div class="container poppins-font">
+    <img src="{{dish.imagePath}}" alt="dish">
+    <div class="dish-name">
+        {{dish.name}}
+    </div>
+    <div class="dish-description">
+        {{dish.description}}
+    </div>
+    <div class="dish-other-info">
+        <div class="price">{{dish.price}}</div>
+        <div class="time">10-22 Mins</div>
+        <div class="quantity">22 Pcs Avail</div>
+    </div>
+    <div class="buttons">
+        <div class="quantity-button">
+            <button class="decrement" (click)="onDecrement()"> - </button>
+            <div class="selected-quantity">{{quantity}}</div>
+            <button class="increment" (click)="onIncrement()">+</button>
+        </div>
+        <button class="add-to-cart" (click)="addToCart()">
+            Add to cart
+        </button>
+    </div>
+</div>

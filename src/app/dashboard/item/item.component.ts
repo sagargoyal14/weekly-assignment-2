@@ -17,8 +17,4 @@ export class ItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addDish(){
-    this.cartService.addToCart(new Cart(this.dish, 1));
-  }
-
 }

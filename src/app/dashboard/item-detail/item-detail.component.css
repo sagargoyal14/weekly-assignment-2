@@ -1,0 +1,97 @@
+.poppins-font{
+    font-family: 'Poppins';
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 35%;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 100px 0;
+}
+
+.dish-name{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.price, .time, .quantity{
+    width: 33%;
+    text-align: center;
+}
+
+.dish-description{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+.dish-other-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.quantity-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 30px;
+}
+
+button{
+    border: none;
+    background:none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.increment{
+    background-color: #F3C294;
+    color: #00302E;
+    font-size: 31px;
+    padding: 4px 11px;
+}
+
+.decrement{
+    background-color: #F3C294;
+    color: #00302E;
+    font-size: 31px;
+    padding: 4px 15px;
+}
+
+.selected-quantity{
+    font-weight: 600;
+    font-size: 27px;
+    color: #00302E;
+    margin: 0 5px;
+    width: 40px;
+    text-align: center;
+}
+
+.add-to-cart{
+    font-weight: 600;
+    font-size: 13px;
+    background-color: #00302E;
+    color: white;
+    padding: 14px ;
+}
