@@ -1,5 +1,5 @@
 import { EventEmitter } from "@angular/core";
-import { Cart } from "../shared/cart.mode";
+import { Cart } from "../shared/cart.model";
 
 export  class CartService{
 

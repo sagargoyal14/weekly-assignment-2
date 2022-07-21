@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CartService } from 'src/app/cart/cart.service';
-import { Cart } from 'src/app/shared/cart.mode';
+import { Cart } from 'src/app/shared/cart.model';
 import { Dish } from 'src/app/shared/dish.model';
 
 @Component({
