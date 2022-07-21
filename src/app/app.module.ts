@@ -11,6 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { ItemComponent } from './dashboard/item/item.component';
+import { CartService } from './cart/cart.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { ItemComponent } from './dashboard/item/item.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
