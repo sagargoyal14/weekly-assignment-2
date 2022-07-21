@@ -16,17 +16,6 @@
     justify-content: center;
 }
 
-.brand{
-    font-weight: 700;
-    font-size: 33px;
-    text-align: center;
-}
-
-img{
-    height: 100px;
-    width: 100px;
-}
-
 .nav-options{
     list-style: none;
     display: flex;
@@ -41,6 +30,12 @@ a{
     border-radius: 5px;
     padding:14px 15px;
     margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+span{
+    margin-left: 5px;
 }
 
 a:hover{

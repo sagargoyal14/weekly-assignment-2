@@ -13,19 +13,19 @@ export class DashboardComponent implements OnInit {
     {
       name:"Burger",
       description:"Burger is very tasty",
-      imagePath:"../../assets/images/bon-vivant-qom5MPOER-I-unsplash 10.svg",
+      imagePath:"../../assets/images/dish-1.svg",
       price:1000
     },
     {
       name:"Burger",
       description:"Burger is very tasty i have tried here and you can order this online offline",
-      imagePath:"../../assets/images/bon-vivant-qom5MPOER-I-unsplash 10.svg",
+      imagePath:"../../assets/images/dish-1.svg",
       price:1000
     },
     {
       name:"Burger",
       description:"Burger is very tasty",
-      imagePath:"../../assets/images/bon-vivant-qom5MPOER-I-unsplash 10.svg",
+      imagePath:"../../assets/images/dish-1.svg",
       price:1000
     }
   ]
