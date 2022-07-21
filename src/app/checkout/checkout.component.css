@@ -1,0 +1,49 @@
+.poppins-font{
+    font-family: 'Poppins';
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 40%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.header{
+    width: 100%;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+input[type=text]{
+    width: 100%;
+    border:1px solid #FBDDBB;
+    margin-bottom: 28px;
+    font-size: 14px;
+    padding: 19px 25px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    background-color: #00302E;
+    color: #FBDDBB;
+    font-size: 13px;
+    padding: 20px 0px;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
