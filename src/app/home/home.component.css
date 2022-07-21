@@ -7,12 +7,3 @@
     height: 100vh;
     grid-template-columns: 2fr 8fr;
 }
-
-.sidebar{
-    width: 100%;
-}
-
-.dashboard{
-    width: 100%;
-    background-color: aquamarine;
-}

@@ -1,0 +1,36 @@
+.poppins-font{
+    font-family: 'Poppins';
+}
+
+.container{
+    height: 100%;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    padding: 0px 40px;
+}
+
+.username-container{
+    font-size: 23px;
+    font-weight: 600;
+    color: #00302E;
+}
+
+.short-message-container{
+    font-weight: 400;
+    font-size: 14;
+    color: rgba(0, 0, 0, 0.69);
+}
+
+.items-container{
+    height: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+    padding: 0px 40px;
+    overflow-x: auto;
+}
