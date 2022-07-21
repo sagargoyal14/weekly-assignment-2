@@ -11,6 +11,6 @@
         <img src="../../assets/images/user.svg" alt="">
     </div>
     <div class="items-container">
-        <app-item *ngFor="let item of items" ></app-item>
+        <app-item *ngFor="let dish of dishes" [dish]="dish" ></app-item>
     </div>
 </div>
