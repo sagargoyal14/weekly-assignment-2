@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../cart/cart.service';
 
 @Component({
   selector: 'app-sidebar-nav',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarNavComponent implements OnInit {
 
-  constructor() { }
+  cartSize:number=0;
+
+  constructor(private cartService: CartService) { 
+    this.cartSize = cartService.getCartSize();
+    this.cartService.cartSizeChanged.subscribe((cartSize:number)=>{
+      this.cartSize = cartSize;
+    })
+  }
 
   ngOnInit(): void {
   }

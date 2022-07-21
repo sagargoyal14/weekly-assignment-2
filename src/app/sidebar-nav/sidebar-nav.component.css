@@ -33,14 +33,33 @@ a{
     margin: 10px 0;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 span{
     margin-left: 5px;
 }
 
+.cartSize{
+    position: absolute;
+    right: 10px;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: #F3C294;
+    color:black;
+}
+
+.orderSize{
+    position: absolute;
+    right: 10px;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: #06E775;  
+    color:black;
+}
+
+
 a:hover{
     background-color: #EFEFEF;
     color: black;
 }
-

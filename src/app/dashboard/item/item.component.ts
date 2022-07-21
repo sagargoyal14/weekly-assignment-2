@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { CartService } from 'src/app/cart/cart.service';
+import { Cart } from 'src/app/shared/cart.mode';
 import { Dish } from 'src/app/shared/dish.model';
 
 @Component({
@@ -10,9 +12,13 @@ export class ItemComponent implements OnInit {
 
   @Input() dish:Dish;
 
-  constructor() { }
+  constructor(private cartService:CartService) { }
 
   ngOnInit(): void {
+  }
+
+  addDish(){
+    this.cartService.addToCart(new Cart(this.dish, 1));
   }
 
 }

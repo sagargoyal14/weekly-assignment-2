@@ -1,11 +1,15 @@
+import { EventEmitter } from "@angular/core";
 import { Cart } from "../shared/cart.mode";
 
 export  class CartService{
 
-    private cart:Cart[];
+    cartSizeChanged = new EventEmitter<number>();
+
+    private cart:Cart[]=[];
 
     addToCart(cart:Cart){
         this.cart.push(cart);
+        this.cartSizeChanged.emit(this.cart.length);
     }
 
     getCart(){
@@ -14,6 +18,10 @@ export  class CartService{
 
     getCartSize(){
         return this.cart.length;
+    }
+
+    clearCart(){
+        this.cart = [];
     }
 
 }
