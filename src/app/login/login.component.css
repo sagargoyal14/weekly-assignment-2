@@ -75,12 +75,12 @@ button{
     text-align: center;
 }
 
-.signup{
+.login{
     width: 100%;
     margin-top: 34px;
 }
 
-.signup a{
+.login a{
     text-decoration: none;
     color: rgba(0, 48, 46, 0.91);
     font-size: 14px;
