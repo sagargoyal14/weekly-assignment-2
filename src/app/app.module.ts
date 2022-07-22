@@ -15,6 +15,10 @@ import { CartService } from './cart/cart.service';
 import { ItemDetailComponent } from './dashboard/item-detail/item-detail.component';
 import { OrderDetailComponent } from './orders/order-detail/order-detail.component';
 import { CartDetailComponent } from './cart/cart-detail/cart-detail.component';
+import { AuthComponent } from './auth/auth.component';
+import { OrderService } from './orders/order.service';
+import { AuthService } from './auth/auth.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,11 +35,13 @@ import { CartDetailComponent } from './cart/cart-detail/cart-detail.component';
     ItemDetailComponent,
     OrderDetailComponent,
     CartDetailComponent,
+    AuthComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [CartService],
+  providers: [CartService, OrderService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

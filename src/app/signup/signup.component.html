@@ -5,10 +5,10 @@
         <div class="form">
             <div class="header poppins-font">Welcome To Lillies!</div>
             <div class="inputs">
-                <input type="text" name="" id="" placeholder="Your First Name">
-                <input type="text" name="" id="" placeholder="Your Email Address">
-                <input type="text" name="" id="" placeholder="Your Password">
-                <button class="rubik-font"><div>SIGNUP</div></button>
+                <input type="text" name="" id="" placeholder="Your First Name" [(ngModel)]="name">
+                <input type="text" name="" id="" placeholder="Your Email Address" [(ngModel)]="email">
+                <input type="password" name="" id="" placeholder="Your Password" [(ngModel)]="password">
+                <button class="rubik-font" (click)="signUp()"><div>SIGNUP</div></button>
                 <div class="signup poppins-font">
                     <a href="">Already have an account</a>
                 </div>
