@@ -5,11 +5,11 @@
         <div class="form">
             <div class="header poppins-font">Welcome Back!</div>
             <div class="inputs">
-                <input type="text" name="" id="" placeholder="Your Email Address">
-                <input type="text" name="" id="" placeholder="Your Password">
-                <button class="rubik-font"><div>LOG IN</div></button>
+                <input type="text" name="" id="" placeholder="Your Email Address" [(ngModel)]="email">
+                <input type="text" name="" id="" placeholder="Your Password" [(ngModel)]="password">
+                <button class="rubik-font" (click)="login()"><div>LOG IN</div></button>
                 <div class="login poppins-font">
-                    <a href="">Create account</a>
+                    <a routerLink="/signup">Create account</a>
                 </div>
             </div>
         </div>
