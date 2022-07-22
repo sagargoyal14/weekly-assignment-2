@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth/auth.service';
 import { Dish } from '../shared/dish.model';
 
 @Component({
@@ -8,7 +9,7 @@ import { Dish } from '../shared/dish.model';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   dishes:Dish[] = [
     new Dish(
@@ -31,7 +32,10 @@ export class DashboardComponent implements OnInit {
     )
   ]
 
+  userName:string=""
+
   ngOnInit(): void {
+    this.userName=this.authService.getUser().name;
   }
 
 }
