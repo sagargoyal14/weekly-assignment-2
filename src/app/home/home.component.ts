@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   cartDisplay:boolean = false;
   orderDisplay:boolean = false;
-  itemDisplay:boolean = true;
+  itemDisplay:boolean = false;
 
 
   ngOnInit(): void {

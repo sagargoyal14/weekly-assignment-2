@@ -9,7 +9,7 @@
       <div class="text-center unit-price">Unit Price</div>
       <div class="text-center sub-total">Sub-total</div>
     </div>
-    <app-cart-detail></app-cart-detail>
+    <app-cart-detail *ngFor="let dish of cart" [dish]="dish"></app-cart-detail>
   </div>
 </div>
 </div>

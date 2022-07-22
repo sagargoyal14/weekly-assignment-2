@@ -21,6 +21,7 @@ import { AuthService } from './auth/auth.service';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { NavigationToggleService } from './home/navigation-toggle.service';
+import { ItemService } from './dashboard/item/item.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { NavigationToggleService } from './home/navigation-toggle.service';
     FormsModule,
     AppRoutingModule,
   ],
-  providers: [CartService, OrderService, AuthService, NavigationToggleService],
+  providers: [CartService, OrderService, AuthService, NavigationToggleService, ItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

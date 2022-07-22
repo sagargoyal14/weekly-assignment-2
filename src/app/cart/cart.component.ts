@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationToggleService } from '../home/navigation-toggle.service';
+import { Cart } from '../shared/cart.model';
+import { CartService } from './cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -8,9 +10,15 @@ import { NavigationToggleService } from '../home/navigation-toggle.service';
 })
 export class CartComponent implements OnInit {
 
-  constructor(private navigationToggleService: NavigationToggleService) { }
+  constructor(private navigationToggleService: NavigationToggleService, private cartService: CartService) { }
+
+  cart:Cart[]
 
   ngOnInit(): void {
+    this.cart = this.cartService.getCart();
+    this.cartService.cartChanged.subscribe((cart:Cart[]) => {
+      this.cart=cart;
+    })
   }
 
   closeCart(){
