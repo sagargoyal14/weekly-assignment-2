@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationToggleService } from '../home/navigation-toggle.service';
 
 @Component({
   selector: 'app-cart',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  constructor() { }
+  constructor(private navigationToggleService: NavigationToggleService) { }
 
   ngOnInit(): void {
+  }
+
+  closeCart(){
+    this.navigationToggleService.cartToggle()
   }
 
 }

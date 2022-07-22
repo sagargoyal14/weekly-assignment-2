@@ -20,6 +20,7 @@ import { OrderService } from './orders/order.service';
 import { AuthService } from './auth/auth.service';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { NavigationToggleService } from './home/navigation-toggle.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     AppRoutingModule,
   ],
-  providers: [CartService, OrderService, AuthService],
+  providers: [CartService, OrderService, AuthService, NavigationToggleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
