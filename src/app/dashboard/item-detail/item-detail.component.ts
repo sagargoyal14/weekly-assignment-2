@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/cart/cart.service';
+import { NavigationToggleService } from 'src/app/home/navigation-toggle.service';
 import { Cart } from 'src/app/shared/cart.model';
 import { Dish } from 'src/app/shared/dish.model';
+import { ItemService } from '../item/item.service';
 
 @Component({
   selector: 'app-item-detail',
@@ -19,9 +21,10 @@ export class ItemDetailComponent implements OnInit {
     1000
   )
 
-  constructor(private cartService : CartService) { }
+  constructor(private cartService : CartService, private navigationToggleService: NavigationToggleService, private itemService: ItemService) { }
 
   ngOnInit(): void {
+    this.dish = this.itemService.getDish()
   }
 
   onIncrement(){
@@ -33,7 +36,16 @@ export class ItemDetailComponent implements OnInit {
   }
 
   addToCart(){
-    this.cartService.addToCart(new Cart(this.dish, this.quantity))
+    if(this.quantity >0){
+      this.cartService.addToCart(new Cart(this.dish, this.quantity))
+      this.navigationToggleService.itemToggle()
+      this.itemService.clearDish()
+    }
+  }
+
+  closeItem(){
+    this.navigationToggleService.itemToggle()
+    this.itemService.clearDish()
   }
 
 }

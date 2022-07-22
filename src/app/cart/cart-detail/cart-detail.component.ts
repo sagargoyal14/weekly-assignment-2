@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Cart } from 'src/app/shared/cart.model';
+import { Dish } from 'src/app/shared/dish.model';
 
 @Component({
   selector: 'app-cart-detail',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartDetailComponent implements OnInit {
 
+  @Input() dish:Cart;
   constructor() { }
 
   ngOnInit(): void {
