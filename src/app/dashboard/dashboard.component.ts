@@ -29,6 +29,12 @@ export class DashboardComponent implements OnInit {
       "../../assets/images/dish-3.svg",
       "Burger is very tasty",
       1000
+    ),
+    new Dish(
+      "Burger",
+      "../../assets/images/dish-3.svg",
+      "Burger is very tasty",
+      1000
     )
   ]
 

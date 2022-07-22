@@ -1,9 +1,16 @@
 .grid{
     display: grid;
+    position: relative;
 }
 
-.container{
-    width: 100vw;
+.sidebar{
     height: 100vh;
+    position:fixed;
+}
+.container{
     grid-template-columns: 2fr 8fr;
 }
+
+.dashboard{
+}
+
