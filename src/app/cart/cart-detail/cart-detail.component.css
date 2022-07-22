@@ -1,0 +1,34 @@
+.text-center{
+    text-align: center;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.four-cols{
+    grid-template-columns: 50% 10% 20% 20%;
+}
+
+.grid{
+    display: grid;
+}
+
+.items{
+    margin-top: 30px;
+}
+
+.dish-name{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    color: #00302E;
+}
+
+.dish-quantity, .dish-price, .dish-total{
+    font-weight: 700;
+    font-size: 17px;
+    color: #00302E;
+}
