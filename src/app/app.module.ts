@@ -19,6 +19,7 @@ import { AuthComponent } from './auth/auth.component';
 import { OrderService } from './orders/order.service';
 import { AuthService } from './auth/auth.service';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
   ],
   providers: [CartService, OrderService, AuthService],
   bootstrap: [AppComponent]
