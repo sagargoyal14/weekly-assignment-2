@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationToggleService } from '../home/navigation-toggle.service';
 
 @Component({
   selector: 'app-orders',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrdersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private navigationToggleService: NavigationToggleService) { }
 
   ngOnInit(): void {
+  }
+
+  closeOrders(){
+    this.navigationToggleService.orderToggle();
   }
 
 }

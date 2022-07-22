@@ -10,11 +10,16 @@ export class HomeComponent implements OnInit {
 
   constructor(private navigationToggleService: NavigationToggleService) { }
 
-  cartDisplay:boolean = true;
+  cartDisplay:boolean = false;
+  orderDisplay:boolean = false;
+
 
   ngOnInit(): void {
     this.navigationToggleService.cartDisplayChanged.subscribe((cartDisplay:boolean)=>{
       this.cartDisplay = cartDisplay;
+    })
+    this.navigationToggleService.orderDisplayChanged.subscribe((orderDisplay:boolean)=>{
+      this.orderDisplay = orderDisplay;
     })
   }
 

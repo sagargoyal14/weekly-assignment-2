@@ -34,4 +34,8 @@ export class SidebarNavComponent implements OnInit {
     this.navigationToggleService.cartToggle()
   }
 
+  ordersDisplay(){
+    this.navigationToggleService.orderToggle();
+  }  
+
 }
