@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
 
   cartDisplay:boolean = false;
   orderDisplay:boolean = false;
+  itemDisplay:boolean = true;
 
 
   ngOnInit(): void {
@@ -20,6 +21,9 @@ export class HomeComponent implements OnInit {
     })
     this.navigationToggleService.orderDisplayChanged.subscribe((orderDisplay:boolean)=>{
       this.orderDisplay = orderDisplay;
+    })
+    this.navigationToggleService.itemDisplayChanged.subscribe((itemDisplay:boolean)=>{
+      this.itemDisplay = itemDisplay;
     })
   }
 

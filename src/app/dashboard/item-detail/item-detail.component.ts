@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/cart/cart.service';
+import { NavigationToggleService } from 'src/app/home/navigation-toggle.service';
 import { Cart } from 'src/app/shared/cart.model';
 import { Dish } from 'src/app/shared/dish.model';
 
@@ -19,7 +20,7 @@ export class ItemDetailComponent implements OnInit {
     1000
   )
 
-  constructor(private cartService : CartService) { }
+  constructor(private cartService : CartService, private navigationToggleService: NavigationToggleService) { }
 
   ngOnInit(): void {
   }
@@ -34,6 +35,10 @@ export class ItemDetailComponent implements OnInit {
 
   addToCart(){
     this.cartService.addToCart(new Cart(this.dish, this.quantity))
+  }
+
+  closeItem(){
+    this.navigationToggleService.itemToggle()
   }
 
 }
