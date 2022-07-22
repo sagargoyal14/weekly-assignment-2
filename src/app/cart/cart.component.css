@@ -6,17 +6,36 @@
     text-align: center;
     width: 100%;
 }
+
+.two-cols{
+    grid-template-columns: 50% 50%;
+}
+
+.container-1{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.container-2{
+    background-color: white;
+    padding: 20px 20px;
+}
  
 .container{
-    max-width: 50%;
-    margin: 0 auto;
     height: 100vh;
-    padding: 60px 40px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
 }
 
 .flex{
     display: flex;
     align-items: center;
+}
+
+.header-container{
+    justify-content: space-between;
 }
 
 .four-cols{
@@ -44,3 +63,12 @@
     color: rgba(0, 0, 0, 0.69);
 }
 
+.close{
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(189, 189, 189);
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 50%;
+}

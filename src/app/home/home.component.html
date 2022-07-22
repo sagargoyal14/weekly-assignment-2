@@ -1,4 +1,5 @@
-<div class="container grid">
+<div>
+<div class="home-container grid">
     <div class="sidebar">
         <app-sidebar-nav></app-sidebar-nav>
     </div>
@@ -7,4 +8,6 @@
         <app-dashboard></app-dashboard>
     </div>
 </div>
- 
+<app-cart *ngIf="cartDisplay"></app-cart>
+<app-orders *ngIf="orderDisplay"></app-orders>
+</div>

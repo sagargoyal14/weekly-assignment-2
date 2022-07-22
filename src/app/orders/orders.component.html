@@ -1,6 +1,8 @@
-<div class="container poppins-font">
-    <div class="header-container">Your Orders</div>
-    <div class="items-container">
+<div class="container grid two-cols poppins-font">
+  <div class="container-1"></div>
+  <div class="container-2">
+    <div class="header-container flex"><span>Cart</span><button class="close" (click)="closeOrders()"> X </button></div>
+  <div class="items-container">
       <div class="fields grid four-cols">
         <div class="item">Item</div>
         <div class="text-center quantity">Qty</div>
@@ -9,5 +11,6 @@
       </div>
       <app-order-detail></app-order-detail>
     </div>
+  </div>
   </div>
   

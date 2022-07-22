@@ -3,11 +3,15 @@
     position: relative;
 }
 
+.container{
+    position: relative;
+}
+
 .sidebar{
     height: 100vh;
     position:fixed;
 }
-.container{
+.home-container{
     grid-template-columns: 2fr 8fr;
 }
 
