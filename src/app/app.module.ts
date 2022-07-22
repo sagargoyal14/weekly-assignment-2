@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { ItemComponent } from './dashboard/item/item.component';
 import { CartService } from './cart/cart.service';
 import { ItemDetailComponent } from './dashboard/item-detail/item-detail.component';
+import { OrderDetailComponent } from './orders/order-detail/order-detail.component';
+import { CartDetailComponent } from './cart/cart-detail/cart-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ItemDetailComponent } from './dashboard/item-detail/item-detail.compone
     DashboardComponent,
     HomeComponent,
     ItemComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    OrderDetailComponent,
+    CartDetailComponent,
   ],
   imports: [
     BrowserModule

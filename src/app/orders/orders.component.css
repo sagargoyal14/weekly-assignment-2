@@ -23,19 +23,8 @@
     grid-template-columns: 50% 10% 20% 20%;
 }
 
-.five-cols{
-    grid-template-columns: 20% 30% 10% 20% 20%;
-}
-
 .grid{
     display: grid;
-}
-
-.dish-name{
-    margin-left: 10px;
-    font-weight: 600;
-    font-size: 17px;
-    color: #00302E;
 }
 
 .items-container{
@@ -46,18 +35,10 @@
     margin-top: 30px;
 }
 
-.item{
-    margin-left:10px ;
-}
-
 .item, .quantity, .unit-price, .status{
     font-weight: 500;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.69);
 }
 
-.dish-quantity, .dish-price, .dish-status{
-    font-weight: 700;
-    font-size: 17px;
-    color: #00302E;
-}
+

@@ -6,7 +6,7 @@
     text-align: center;
     width: 100%;
 }
-
+ 
 .container{
     max-width: 50%;
     margin: 0 auto;
@@ -23,28 +23,16 @@
     grid-template-columns: 50% 10% 20% 20%;
 }
 
-.five-cols{
-    grid-template-columns: 20% 30% 10% 20% 20%;
-}
 
 .grid{
     display: grid;
 }
 
-.dish-name{
-    margin-left: 10px;
-    font-weight: 600;
-    font-size: 17px;
-    color: #00302E;
-}
 
 .items-container{
     margin-top: 20px;
 }
 
-.items{
-    margin-top: 30px;
-}
 
 .item{
     margin-left:10px ;
@@ -56,8 +44,3 @@
     color: rgba(0, 0, 0, 0.69);
 }
 
-.dish-quantity, .dish-price, .dish-total{
-    font-weight: 700;
-    font-size: 17px;
-    color: #00302E;
-}
