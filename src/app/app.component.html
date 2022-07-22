@@ -1,5 +1,2 @@
-<!-- <app-home></app-home> -->
-<!-- <app-item-detail></app-item-detail> -->
-<!-- <app-checkout></app-checkout> -->
-<!-- <app-orders></app-orders> -->
-<app-login></app-login>
+<app-auth *ngIf="user===null"></app-auth>
+<app-home *ngIf="user!=null"></app-home>

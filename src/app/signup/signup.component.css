@@ -49,7 +49,7 @@
     padding-right: 107px;
 }
 
-input[type=text]{
+input[type=text], input[type=password]{
     width: 100%;
     border:1px solid #FBDDBB;
     margin-bottom: 28px;
@@ -59,9 +59,9 @@ input[type=text]{
     outline: none;
 }
 
-input[type=text]:focus {
+input[type]:focus {
     border: 2px solid #FBDDBB;
-  }
+}
 
 button{
     background-color: #00302E;
